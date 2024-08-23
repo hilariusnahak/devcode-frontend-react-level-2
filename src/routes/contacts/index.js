@@ -13,7 +13,7 @@ const ContactManager = () => {
 
   // TODO: Uncomment baris kode di bawah ini untuk membuat fungsi handleGetContactsData yang akan men-dispatch fungsi mengambil data kontak dari api yang sudah dibuat sebelumnya di services/index.js dan menyimpan data kontak ke dalam variabel contactsData
   const handleGetContactsData = async () => {
-    const res = await setContactsData();
+    const res = await getAllContactsData();
     setContactsData(res?.data?.data);
   };
 
